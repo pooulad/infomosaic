@@ -1,0 +1,9 @@
+export { default as PuzzleIcon } from "./PuzzleIcon/PuzzleIcon";
+export { default as CalendarIcon } from "./CalendarIcon/CalendarIcon";
+export { default as HeartIcon } from "./HeartIcon/HeartIcon";
+export { default as GolangIcon } from "./GolangIcon/GolangIcon";
+export { default as ReactjsIcon } from "./ReactjsIcon/ReactjsIcon";
+export { default as GithubIcon } from "./GithubIcon/GithubIcon";
+export { default as DiskIcon } from "./DiskIcon/DiskIcon";
+export { default as MonitorIcon } from "./MonitorIcon/MonitorIcon";
+export { default as CpuIcon } from "./CpuIcon/CpuIcon";
