@@ -10,6 +10,7 @@ import (
 	"sync"
 	"time"
 
+	"github.com/joho/godotenv"
 	"github.com/pooulad/infomosaic/internal/systeminfo"
 	"golang.org/x/net/websocket"
 )
@@ -102,7 +103,17 @@ func NewServer() *Server {
 }
 
 func main() {
-	fmt.Println("Starting Info Mosaic🧩 server on port 8080")
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
+
+	// add your env variables in .env file to load it
+	var (
+		host = os.Getenv("INFOMOSAIC_HOST")
+		port = os.Getenv("INFOMOSAIC_PORT")
+	)
+
 	server := NewServer()
 	go func(s *Server) {
 		for {
@@ -141,7 +152,8 @@ func main() {
 		}
 	}(server)
 
-	err := http.ListenAndServe(":8080", &server.mux)
+	fmt.Printf("Starting Infomosaic🧩 server on host:%v and port:%v \n", host, port)
+	err = http.ListenAndServe(fmt.Sprintf("%v:%v", host, port), &server.mux)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
