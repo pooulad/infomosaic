@@ -1,8 +1,8 @@
 ![infomosaic_logo](https://github.com/pooulad/infomosaic/blob/main/images/infomosaic.png)<br/>
 
-See your system information side by side like mosaics🧩<br/>
+### See your system information side by side like mosaics🧩<br/>
 
-Minimal project written with Golang and Reactjs
+### Minimal project written with Golang and Reactjs
 
 
 ![infomosaic_screen_dark](https://github.com/pooulad/infomosaic/blob/main/images/screen-dark.png)
@@ -19,7 +19,7 @@ INFOMOSAIC_PORT=8080
 INFOMOSAIC_CLIENT_PORT=3000
 ```
 
-## Run with Docker🐳:<br/>
+## 🐳Run with Docker:<br/>
 
 1.<br/>
 ```bash
@@ -46,7 +46,7 @@ docker compose up -d --build
 docker compose logs
 ```
 
-## Run manually:<br/>
+## ✋Run manually:<br/>
 
 1.<br/>
 ```bash
