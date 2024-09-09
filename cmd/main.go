@@ -110,7 +110,7 @@ func main() {
 
 	// add your env variables in .env file to load it
 	var (
-		host = os.Getenv("INFOMOSAIC_HOST")
+		// host = os.Getenv("INFOMOSAIC_HOST")
 		port = os.Getenv("INFOMOSAIC_PORT")
 	)
 
@@ -152,8 +152,8 @@ func main() {
 		}
 	}(server)
 
-	fmt.Printf("Starting Infomosaic🧩 server on host:%v and port:%v \n", host, port)
-	err = http.ListenAndServe(fmt.Sprintf("%v:%v", host, port), &server.mux)
+	fmt.Printf("Starting Infomosaic🧩 server on port:%v \n", port)
+	err = http.ListenAndServe(fmt.Sprintf(":%v", port), &server.mux)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
