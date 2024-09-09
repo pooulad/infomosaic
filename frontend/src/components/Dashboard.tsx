@@ -30,7 +30,7 @@ function Dashboard() {
         alignItems: "center",
         padding: "10px",
         gap: "10px",
-        margin: "10px auto",
+        margin: "10px auto 50px",
         minHeight: "80vh",
         [theme.breakpoints.down("md")]: {
           padding: "30px",
@@ -410,7 +410,7 @@ function Dashboard() {
                         },
                       })}
                       height={200}
-                      value={appData?.system?.memory?.usedPercent}
+                      value={appData?.system?.memory?.usedPercent.toFixed()}
                     />
                     <Box>Memory</Box>
                   </Box>

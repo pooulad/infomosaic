@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  backend:
+    build: .
+    container_name: infomosaic-server-container
+    ports:
+      - "${INFOMOSAIC_PORT}:8080"
+    env_file:
+      - .env
+
+  frontend:
+    build: ./frontend
+    container_name: infomosaic-client-container
+    ports:
+      - "${INFOMOSAIC_CLIENT_PORT}:80"
+    env_file:
+      - .env

@@ -3,13 +3,13 @@ module github.com/pooulad/infomosaic
 go 1.22.6
 
 require (
+	github.com/joho/godotenv v1.5.1
 	github.com/shirou/gopsutil/v4 v4.24.8
 	golang.org/x/net v0.28.0
 )
 
 require (
 	github.com/go-ole/go-ole v1.2.6 // indirect
-	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/lufia/plan9stats v0.0.0-20211012122336-39d0f177ccd0 // indirect
 	github.com/power-devops/perfstat v0.0.0-20210106213030-5aafc221ea8c // indirect
 	github.com/shoenig/go-m1cpu v0.1.6 // indirect
