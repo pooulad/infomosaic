@@ -1,8 +1,8 @@
 ![infomosaic_logo](https://github.com/pooulad/infomosaic/blob/main/images/infomosaic.png)<br/>
 
-### See your system information side by side like mosaics🧩<br/>
+### See your system information momentarily and side by side like mosaics🧩<br/>
 
-### Minimal project written with Golang and Reactjs
+### Minimal 🔌websocket project written with Golang and Reactjs
 
 
 ![infomosaic_screen_dark](https://github.com/pooulad/infomosaic/blob/main/images/screen-dark.png)
